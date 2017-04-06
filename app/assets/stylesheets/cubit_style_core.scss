@@ -1,0 +1,36 @@
+// CUBIT STYLE CORE
+@charset "utf-8";
+
+@import 'color_palette';
+
+$base_padding: 1em;
+$base_margin: 1em;
+
+// LAYOUT
+.flex-grid {
+  display: flex;
+  &.vertical {
+    flex-direction: column;
+  }
+  .col {
+    flex: 1;
+    margin: $base_margin;
+    padding: $base_padding;
+  }
+  .col-2 {
+    flex: 2;
+    margin: $base_margin;
+    padding: $base_padding;
+  }
+  .col-3 {
+    flex: 3;
+    margin: $base_margin;
+    padding: $base_padding;
+  }
+  .col-4 {
+    flex: 4;
+    margin: $base_margin;
+    padding: $base_padding;
+  }
+
+}

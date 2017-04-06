@@ -1,0 +1,53 @@
+
+// COLOR PALETTE
+$black: #28343C;
+
+$dark-blue: #107EAC;
+$blue: #29ABE1;
+$powder-blue: #91B0D5;
+
+$green: #86BD59;
+$powder-green: #93BAB6;
+
+$dark-gray: #666;
+$med-gray: #898989;
+$light-gray: #ECF0F1;
+
+$powder-orange: #E9824C;
+
+$red: #E44A35;
+$powder-red: #D87373;
+
+$purple: #9951B5;
+
+$white: #fff;
+
+// Move to a style-guide-only sheet
+.black {color: $black}
+.blue {color: $blue}
+.dark-blue {color: $dark-blue}
+.dark-gray {color: $dark-gray}
+.green {color: $green}
+.light-gray {color: $light-gray}
+.med-gray {color: $med-gray}
+.powder-blue {color: $powder-blue}
+.powder-green {color: $powder-green}
+.powder-orange {color: $powder-orange}
+.powder-red {color: $powder-red}
+.purple {color: $purple}
+.red {color: $red}
+.white {color: $white}
+
+.black-bg {background-color: $black}
+.blue-bg {background-color: $blue}
+.dark-blue-bg {background-color: $dark-blue}
+.dark-gray-bg {background-color: $dark-gray}
+.green-bg {background-color: $green}
+.light-gray-bg {background-color: $light-gray}
+.med-gray-bg {background-color: $med-gray}
+.powder-blue-bg {background-color: $powder-blue}
+.powder-green-bg {background-color: $powder-green}
+.powder-orange-bg {background-color: $powder-orange}
+.powder-red-bg {background-color: $powder-red}
+.purple-bg {background-color: $purple}
+.red-bg {background-color: $red}
