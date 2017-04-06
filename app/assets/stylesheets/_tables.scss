@@ -43,10 +43,15 @@ table {
   }
   &.sample {
     td, th {
-      font-size: 0.5em;
       width: 20px;
     }
   }
+  &.small-text {
+    td, th {
+      font-size: 0.5em;
+    }
+  }
+
   td.spreadsheet-headers,
   th.spreadsheet-headers,
   tr.spreadsheet-headers th {
