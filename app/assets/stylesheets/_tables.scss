@@ -46,7 +46,12 @@ table {
       width: 20px;
     }
   }
-  &.small-text {
+  &.sm-text {
+    td, th {
+      font-size: 0.75em;
+    }
+  }
+  &.xs-text {
     td, th {
       font-size: 0.5em;
     }
