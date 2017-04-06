@@ -1,0 +1,64 @@
+// tables.scss
+
+.responsive-table {
+  overflow: scroll;
+}
+table {
+  td,th {
+    text-align: right;
+
+    &.text, &.rowth {
+      text-align: left;
+    }
+  }
+  th {
+    font-weight: 700;
+  }
+  th.rank,
+  td.rank {
+    text-align: center;
+    width: 1px;
+  }
+}
+
+// Styles a table as an excel-style spreadsheet
+.spreadsheet {
+  border-collapse: collapse;
+  td, th {
+    border: 1px solid #aaa;
+    padding: 0.33em;
+  }
+  td {
+    background-color: #fff;
+    text-align: right;
+    &.text {
+      text-align: left;
+    }
+  }
+  th {
+    border-bottom: 2px solid #aaa;
+    font-weight: bold;
+    text-align: left;
+    width: 100px;
+  }
+  &.sample {
+    td, th {
+      font-size: 0.5em;
+      width: 20px;
+    }
+  }
+  td.spreadsheet-headers,
+  th.spreadsheet-headers,
+  tr.spreadsheet-headers th {
+    border-bottom: 1px solid #aaa;
+    background-color: #eee;
+    text-align: center;
+  }
+  td.subheader {
+    font-weight: bold;
+    vertical-align: bottom;
+  }
+  td.spreadsheet-headers {
+    width: 1px;
+  }
+}
