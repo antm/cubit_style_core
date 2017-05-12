@@ -1,0 +1,47 @@
+// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
+$base-font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+    "Fira Sans", "Droid Sans", "Helvetica Neue", 
+    sans-serif;
+$font-headline: $base-font-family;
+
+// Based a lot on bourbon.io and it's refills.
+// Font Sizes
+$base-font-size: 0.9em;
+$base-font-color: $black !default;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1.3em;
+$small-spacing: $base-spacing / 2;
+
+
+// Animations
+$base-duration: 300ms;
+$base-timing: ease;
+
+// Screen Sizes
+$large-screen: 53.75em !default;
+$medium-screen: 40em !default;
+$small-screen: 320px;
+
+// Borders
+$base-border-color: $light-gray !default;
+
+$action-color: $blue !default;
+
+$base_padding: 1em;
+$base_margin: 1em;
+
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  margin: 0;
+  padding: 0;
+}

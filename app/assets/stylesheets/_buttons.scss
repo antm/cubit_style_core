@@ -1,0 +1,87 @@
+@mixin btn($action-color: $light-gray, $text-color: $dark-blue) {
+  appearance: none;
+  background-color: $action-color;
+  border: 0;
+  border-radius: $base-border-radius;
+  color: $text-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: $small-spacing $base-spacing;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: darken($action-color, 10%);
+    color: $text-color;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+  &.wrap {
+    white-space: normal;
+  }
+}
+
+.btn {
+  @include btn();
+}
+
+.btn-blue,
+.btn-primary {
+  @include btn($blue, $white);
+}
+
+.btn-white {
+  @include btn($white, $dark-gray);
+}
+
+.btn-green {
+  @include btn($green, $white);
+}
+.btn-red {
+  @include btn($red, $white)
+}
+.btn-orange {
+  @include btn($powder-orange, $white)
+}
+
+.btn-danger {
+  @extend .btn-red;
+}
+
+.btn .tag {
+  display: block;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+.btn-small {
+  padding: $small-spacing/2 $small-spacing;
+}
+
+.btn-bar {
+  display: flex;
+  .btn {
+    flex: 1;
+    margin-right: $base_margin;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

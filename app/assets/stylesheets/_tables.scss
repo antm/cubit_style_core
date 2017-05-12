@@ -1,29 +1,51 @@
 // tables.scss
 
+/*
+
+[ ] create a default "text table" class 
+[ ] create a default "data table" class
+[ ] create a set of borders/colors for styling spreadsheets
+[ ] or use a default table style and amend table.x or tr.x or td.x with classes
+    such as tr.row_with_header, table.data_with_row_headers, etc. 
+*/
+
 .responsive-table {
   overflow: scroll;
 }
-table {
-  td,th {
-    text-align: right;
 
-    &.text, &.rowth {
-      text-align: left;
+table {
+  border-collapse: collapse;
+  td,th {
+    border: 1px solid $light-gray;
+    padding: 0.75em 1em;
+    .center {
+      text-align: center;
+    }
+    .rank {
+      text-align: center;
+      width: 1px;
     }
   }
   th {
     font-weight: 700;
   }
-  th.rank,
-  td.rank {
-    text-align: center;
-    width: 1px;
+  &.fullwidth {
+    width: 100%;
+  }
+}
+
+
+table.data-table {
+  td,th {
+    text-align: right;
+  }
+  td:first-child, th:first-child {
+    text-align: left;
   }
 }
 
 // Styles a table as an excel-style spreadsheet
 .spreadsheet {
-  border-collapse: collapse;
   td, th {
     border: 1px solid #aaa;
     padding: 0.33em;

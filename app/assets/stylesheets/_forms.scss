@@ -1,0 +1,40 @@
+// ----- Forms
+.instructions {
+  color: $med-gray;
+  font-size: 0.85em;
+}
+label {
+  display: block;
+}
+.actions {
+  border-top: 2px solid $light-gray;
+  text-align: right;
+  padding: 1em;
+}
+
+form {
+  .field {
+    @extend .flex-grid;
+    border-top: 1px solid $light-gray;
+    padding: 1em 0 1em 1em;
+    label {
+      color: $med-gray;
+      font-size: 11px;
+      padding: 1em;
+      text-transform: uppercase;
+      width: 160px;
+    }
+    input, textarea {
+      border: 0 !important;
+      flex: 1;
+      font-size: 1.2em;
+      padding: 1em 0 1em 1em;
+    }
+    .checkbox {
+      input[type='checkbox'] {
+        margin: 1em 0 1em 1em;
+      }
+    }
+  }
+ 
+}
