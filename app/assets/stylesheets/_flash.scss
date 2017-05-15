@@ -1,0 +1,53 @@
+// _alerts.scss
+
+.alert,
+.flash {
+  background-color: $light-gray;
+  margin: 0;
+  padding: 2em;
+}
+
+.alert-danger, .alert-error, #error_explanation {
+  background-color: $red;
+  color: #fff;
+  a {color: $white;}
+}
+
+.alert-warning {
+  background-color: $powder-orange;
+  color: #fff;
+  a {color: $white;}
+}
+
+.alert-notice {
+  background-color: $powder-blue;
+  color: $white;
+  a {color: $white;}
+}
+
+.alert-success {
+  background-color: $green;
+  color: $white;
+  a {color: $white;}
+}
+
+#error_explanation {
+  border-radius: 0.25em;
+  padding: 1em;
+  h2 {
+    border-bottom: 1px solid $white;
+    font-size: 1em;
+    margin-top: 0;
+    padding: 1em;
+    padding-top: 0;
+  }
+  ul, li {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    li {
+      padding: 0.25em 0;
+    } 
+  }
+}
+

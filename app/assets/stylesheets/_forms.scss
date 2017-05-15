@@ -38,6 +38,13 @@ form {
         outline: none;
       }
     }
+    .field_with_errors {
+      input[type='text'], textarea {
+        background-color: lighten($red, 40%);
+        border: 1px solid red;
+      }
+    }
+
     +.checkbox {
 
       label {
